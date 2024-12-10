@@ -8,6 +8,13 @@
     </v-app>
 </template>
 
-<script setup>
-//
+<script>
+import AppFooter from "@/components/AppFooter.vue";
+
+export default {
+    name      : 'DefaultLayout',
+    components: {
+        AppFooter
+    }
+};
 </script>

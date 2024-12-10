@@ -5,13 +5,42 @@
  */
 
 // Composables
-import { createRouter, createWebHistory } from 'vue-router/auto';
-import { setupLayouts } from 'virtual:generated-layouts';
-import { routes } from 'vue-router/auto-routes';
+import { createRouter, createWebHistory } from 'vue-router';
+
+// Layouts
+import Default from '@/layouts/default.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    routes : setupLayouts(routes),
+    routes : [
+        {
+            path     : '',
+            component: Default,
+            children : [
+                {
+                    name     : 'home',
+                    path     : '',
+                    component: () => import('../pages/index.vue')
+                }
+            ]
+        },
+        {
+            path     : '/:pathMatch(.*)*',
+            component: Default,
+            children : [
+                {
+                    path     : '/:pathMatch(.*)*',
+                    name     : 'NotFound',
+                    component: () => import('../pages/not-found.vue'),
+                    meta     : {
+                        announcer: {
+                            message: 'Page not found.'
+                        }
+                    }
+                }
+            ]
+        }
+    ]
 });
 
 // Workaround for https://github.com/vitejs/vite/issues/11804

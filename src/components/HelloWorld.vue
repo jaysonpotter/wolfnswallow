@@ -7,7 +7,7 @@
             <v-img
                 class="mb-4"
                 height="150"
-                src="@/assets/logo.png"
+                src="@/assets//logo/logo.png"
             />
 
             <div class="text-center">
@@ -23,7 +23,26 @@
             <div class="py-4" />
 
             <v-row>
-                <v-col cols="12">
+                <v-col
+                    cols="12"
+                    sm="6"
+                >
+                    <v-card>
+                        <template #text>
+                            <p>
+                                "Wolf 'n' Swallow offers a whimsical and exclusive culinary adventure for those seeking something
+                                extraordinary. Our charcuterie and provisions are crafted in-house, blending classic comfort with
+                                multicultural twists, while our wine selection features a thoughtfully curated mix of natural and
+                                small-production wines. Chef Houla’s expertise shines through in his dry curing, fermenting, pickling,
+                                and scratch baking, delivering flavors and techniques you won’t find elsewhere. We proudly partner with
+                                local farms and businesses to bring you the freshest ingredients.
+                            </p>
+                            <p>
+                                Join us to savor fine wines, handcrafted cocktails, small plates, caviar service, and artisanal
+                                charcuterie, all from a seasonally inspired menu that changes weekly."
+                            </p>
+                        </template>
+                    </v-card>
                     <v-card
                         class="py-4"
                         color="surface-variant"
@@ -44,7 +63,13 @@
 
                         <template #subtitle>
                             <div class="text-subtitle-1">
-                                Replace this page by removing <v-kbd>{{ `<HelloWorld />` }}</v-kbd> in <v-kbd>pages/index.vue</v-kbd>.
+                                Replace this page by removing
+                                <v-kbd>
+                                    {{ `<HelloWorld/>` }}
+                                </v-kbd>
+                                in
+                                <v-kbd>pages/index.vue</v-kbd>
+                                .
                             </div>
                         </template>
 
