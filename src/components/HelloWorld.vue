@@ -27,6 +27,16 @@
                     cols="12"
                     sm="6"
                 >
+                    <div
+                        itemscope
+                        itemtype="https://schema.org/PostalAddress"
+                    >
+                        <span itemprop="streetAddress">123 Main St</span>,
+                        <span itemprop="addressLocality">Springfield</span>,
+                        <span itemprop="addressRegion">IL</span>
+                        <span itemprop="postalCode">62701</span>,
+                        <span itemprop="addressCountry">USA</span>
+                    </div>
                     <v-card>
                         <template #text>
                             <p>

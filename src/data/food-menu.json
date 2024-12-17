@@ -1,0 +1,213 @@
+[
+  {
+    "category": "Snacks",
+    "description": "details change seasonally",
+    "items": [
+      {
+        "name": "Olives",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Spiced Nuts",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Popcorn",
+        "description": "E.M.F. Spice + olive oil",
+        "price": 5.00
+      },
+      {
+        "name": "Cured Meat",
+        "description": "Mustard + bread",
+        "price": 5.00
+      },
+      {
+        "name": "Deviled Eggs",
+        "description": "Not your moms",
+        "price": 5.00
+      },
+      {
+        "name": "Crudites",
+        "description": "House ranch",
+        "price": 5.00
+      },
+      {
+        "name": "Tartine",
+        "description": "Brown anchovies + herb butter + lemon",
+        "price": 5.00
+      },
+      {
+        "name": "House Pimento Cheese",
+        "description": "Cajun style + chips",
+        "price": 5.00
+      },
+      {
+        "name": "Chicken Liver Pate",
+        "description": "Pickles + bread",
+        "price": 5.00
+      },
+      {
+        "name": "Pomme Frites",
+        "description": "Hand cut w/seasonal aioli",
+        "price": 5.00
+      },
+      {
+        "name": "Bubbles + Frites",
+        "description": "Bottle of guy larmandier vertus premier cru\nBrut zéro + house cut fries + seasonal aioli",
+        "price": 5.00
+      },
+      {
+        "name": "Add Caviar",
+        "description": "Anytime",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Conserva",
+    "description": "tinned seafood\nw house chips + pickles + spread",
+    "items": [
+      {
+        "name": "Ekone habanero smoked oysters",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Siesta co. Small sardines in yuzu kosho",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Siesta co. Tuna belly in olive oil",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Tiny fish co. Octopus in butter + dill",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Tiny fish co. Sunshine + sole",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "La narval galician mussels w garlic + chili",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "La narval galician cockles in brine",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Porthos smoked salmon",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Jose gourmet calamari in ragout sauce",
+        "description": "",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Boards",
+    "description": "details change daily\nw pickled produce, spreads, bread, spiced nuts, olives, and accoutrements.\nall made in-house.\ngf crackers available upon request",
+    "items": [
+      {
+        "name": "E.M.F.",
+        "description": "The big one. Feeds 2-6 ",
+        "price": 5.00
+      },
+      {
+        "name": "Half ‘n’ half",
+        "description": "2 meat 2 cheese. Feeds 2-4",
+        "price": 5.00
+      },
+      {
+        "name": "Say cheese",
+        "description": "Vegetarian, cheesy. Feeds 2-4",
+        "price": 5.00
+      },
+      {
+        "name": "Like a vegan",
+        "description": "Vegan. Feeds 2-4",
+        "price": 5.00
+      },
+      {
+        "name": "Lunchable",
+        "description": "1 meat 1 cheese. Feeds 1-2",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Vegan conserva",
+    "description": "vegan tinned goodies\nw house chips + pickles + spread",
+    "items": [
+      {
+        "name": "Seed to surf celery root “whitefish”",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Seed to surf enoki mushroom “snow crab”",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Porto muinos piquillo peppers w/ sweet kombu",
+        "description": "",
+        "price": 5.00
+      },
+      {
+        "name": "Porto muinos sea spaghetti w/ young garlic",
+        "description": "",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Finale",
+    "description": "details change often",
+    "items": [
+      {
+        "name": "Cheese board",
+        "description": "Fruit + local honeycomb",
+        "price": 5.00
+      },
+      {
+        "name": "House chocolate bark",
+        "description": "Packed wit weird stuff + olive oil + salt",
+        "price": 5.00
+      },
+      {
+        "name": "Buy the staff a 6-pack",
+        "description": "Cus thats super nice of you",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Lil buddies",
+    "description": "served with ice water",
+    "items": [
+      {
+        "name": "Pup ‘cuterie",
+        "description": "Treats + charcuterie",
+        "price": 5.00
+      },
+      {
+        "name": "Pup ‘sicle",
+        "description": "Low sodium chicken bone broth",
+        "price": 5.00
+      }
+    ]
+  }
+]
