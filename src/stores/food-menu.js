@@ -7,6 +7,25 @@ export const useFoodMenuStore = defineStore('foodMenu', {
     state: () => ({
         menu: markRaw(data)
     }),
-    getters: {},
+    getters: {
+        getSnacks () {
+            return this.menu.find(item => item.category === 'Snacks');
+        },
+        getConserva () {
+            return this.menu.find(item => item.category === 'Conserva');
+        },
+        getBoards () {
+            return this.menu.find(item => item.category === 'Boards');
+        },
+        getVeganConserva () {
+            return this.menu.find(item => item.category === 'Vegan Conserva');
+        },
+        getFinale () {
+            return this.menu.find(item => item.category === 'Finale');
+        },
+        getLilBuddies () {
+            return this.menu.find(item => item.category === 'Lil Buddies');
+        }
+    },
     actions: {}
 });

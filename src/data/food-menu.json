@@ -2,6 +2,7 @@
   {
     "category": "Snacks",
     "description": "details change seasonally",
+    "exceptions": "",
     "items": [
       {
         "name": "Olives",
@@ -68,6 +69,7 @@
   {
     "category": "Conserva",
     "description": "tinned seafood\nw house chips + pickles + spread",
+    "exceptions": "",
     "items": [
       {
         "name": "Ekone habanero smoked oysters",
@@ -118,7 +120,8 @@
   },
   {
     "category": "Boards",
-    "description": "details change daily\nw pickled produce, spreads, bread, spiced nuts, olives, and accoutrements.\nall made in-house.\ngf crackers available upon request",
+    "description": "details change daily\nw pickled produce, spreads, bread, spiced nuts, olives, and accoutrements.\nall made in-house.",
+    "exceptions": "gf crackers available upon request",
     "items": [
       {
         "name": "E.M.F.",
@@ -148,8 +151,9 @@
     ]
   },
   {
-    "category": "Vegan conserva",
+    "category": "Vegan Conserva",
     "description": "vegan tinned goodies\nw house chips + pickles + spread",
+    "exceptions": "",
     "items": [
       {
         "name": "Seed to surf celery root “whitefish”",
@@ -176,6 +180,7 @@
   {
     "category": "Finale",
     "description": "details change often",
+    "exceptions": "",
     "items": [
       {
         "name": "Cheese board",
@@ -195,8 +200,9 @@
     ]
   },
   {
-    "category": "Lil buddies",
+    "category": "Lil Buddies",
     "description": "served with ice water",
+    "exceptions": "",
     "items": [
       {
         "name": "Pup ‘cuterie",
