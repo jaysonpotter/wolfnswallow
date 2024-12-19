@@ -45,7 +45,15 @@ const router = createRouter({
                 }
             ]
         }
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        // If a saved position is available, use it (e.g., when using browser back/forward).
+        if (savedPosition) {
+            return savedPosition;
+        }
+        // Scroll to top of the page for new route changes.
+        return { top: 0 };
+    },
 });
 
 // Workaround for https://github.com/vitejs/vite/issues/11804

@@ -2,6 +2,7 @@
     <v-footer
         height="40"
         app
+        class="wns-app-footer"
     >
         <a
             v-for="item in items"
@@ -19,8 +20,7 @@
         </a>
 
         <div
-            class="text-caption text-disabled"
-            style="position: absolute; right: 16px;"
+            class="text-caption"
         >
             &copy; {{ (new Date()).getFullYear() }} <span>Wolf n Swallow</span>
         </div>
@@ -49,12 +49,25 @@ export default {
 };
 </script>
 
-<style scoped lang="sass">
-.social-link :deep(.v-icon)
-    color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
-    text-decoration: none
-    transition: .2s ease-in-out
+<style scoped lang="scss">
+.wns-app-footer {
+    background-color: #1a1a1a;
 
-    &:hover
-        color: rgba(25, 118, 210, 1)
+    .text-caption {
+        color: #fff;
+        position: absolute;
+        right: 16px;
+    }
+}
+
+.social-link :deep(.v-icon) {
+
+    color: #fff;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        color: rgba(25, 118, 210, 1);
+    }
+}
 </style>

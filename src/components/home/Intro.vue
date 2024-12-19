@@ -1,27 +1,24 @@
 <template>
+    <v-parallax
+        src="@/assets/photos/welcome.jpg"
+        :scale="$vuetify.display.mdAndAbove ? 1 : 0.7"
+    >
+        <div class="d-flex flex-column fill-height justify-center align-center text-white">
+            <h1>
+                Wolf n Swallow
+            </h1>
+            <h4>
+                Opening Soon!
+            </h4>
+        </div>
+    </v-parallax>
     <v-container>
         <v-row>
             <v-col
                 cols="12"
-                sm="6"
-            >
-                <v-parallax
-                    src="@/assets/photos/welcome.jpg"
-                    :scale="$vuetify.display.mdAndAbove ? 1 : 0.7"
-                >
-                    <div class="d-flex flex-column fill-height justify-center align-center text-white">
-                        <h1>
-                            Wolf n Swallow
-                        </h1>
-                        <h4>
-                            Opening Soon!
-                        </h4>
-                    </div>
-                </v-parallax>
-            </v-col>
+            />
             <v-col
                 cols="12"
-                sm="6"
             >
                 <v-card>
                     <template #title>
@@ -44,19 +41,62 @@
                     </template>
                 </v-card>
             </v-col>
-            <v-col>
+        </v-row>
+        <v-row>
+            <v-col
+                cols="12"
+                sm="4"
+            >
                 <v-card
-                    class="ma-4"
-                    color="secondary"
-                    dark
-                    height="150"
-                    width="300"
                     clickable
                     to="/food-menu"
+                    class="food-menu-button"
                 >
-                    <v-card-title>Click Me</v-card-title>
+                    <v-img
+                        src="@/assets/photos/food-menu-button.jpg"
+                    />
+                    <v-card-title>Food Menu</v-card-title>
+                    <v-card-subtitle>seasonal and daily delights</v-card-subtitle>
                     <v-card-text>
-                        This is a clickable card acting as a large block button.
+                        Hungy? Check out what's on the slab.
+                    </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col
+                cols="12"
+                sm="4"
+            >
+                <v-card
+                    clickable
+                    to="/wine-menu"
+                    class="wine-menu-button"
+                >
+                    <v-img
+                        src="@/assets/photos/wine-menu-button.jpg"
+                    />
+                    <v-card-title>Wine Menu</v-card-title>
+                    <v-card-subtitle>wines with distinction</v-card-subtitle>
+                    <v-card-text>
+                        We know you're thirsty.
+                    </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col
+                cols="12"
+                sm="4"
+            >
+                <v-card
+                    clickable
+                    to="/flight-club"
+                    class="flight-club-button"
+                >
+                    <v-img
+                        src="@/assets/photos/flight-club-button.jpg"
+                    />
+                    <v-card-title>Flight Club</v-card-title>
+                    <v-card-subtitle>continue as long as necessary</v-card-subtitle>
+                    <v-card-text>
+                        First rule is we talk about Flight Club.
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -78,5 +118,9 @@ p {
     font-weight: 400;
     font-style: normal;
     margin-bottom: 1rem;
+}
+
+.food-menu-button {
+
 }
 </style>

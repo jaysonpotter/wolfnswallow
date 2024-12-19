@@ -11,7 +11,7 @@
             "address": {
             "@type": "PostalAddress",
             "streetAddress": "414 Central Ave SE",
-            "addressLocality": "414 Central Ave SE",
+            "addressLocality": "Albuquerque",
             "addressRegion": "NM",
             "postalCode": "87102",
             "addressCountry": "US"

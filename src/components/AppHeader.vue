@@ -1,6 +1,7 @@
 <template>
     <v-app-bar
-        app
+        class="wns-app-bar"
+        theme="dark"
     >
         <v-app-bar-title
             class="app-bar-logo"
@@ -10,7 +11,7 @@
             >
                 <v-img
                     class="ma-4"
-                    src="@/assets/logo/logo.svg"
+                    src="@/assets/logo/logo-light.svg"
                     alt="Wolf n Swallow logo"
                     max-height="4rem"
                     min-height="4rem"
@@ -29,6 +30,7 @@
         v-model="drawer"
         location="right"
         app
+        class="wns-nav-drawer"
     >
         <v-list>
             <v-list-item
@@ -47,8 +49,8 @@
             <v-list-item
                 to="/food-menu"
                 prepend-icon="mdi-card-account-mail"
-                router
                 exact
+                class="wns-nav-contact-us"
             >
                 <v-list-item-title>Contact Us</v-list-item-title>
             </v-list-item>
@@ -74,6 +76,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.wns-app-bar.v-app-bar.v-toolbar {
+    background-color: #1a1a1a;
+}
+.wns-nav-drawer {
+    background-image: linear-gradient(#7dc4c2, #badedd);
+    border: none;
+}
+.wns-nav-contact-us {
+    background-color: #eb8288;
+}
 .app-bar-logo {
     min-width: 15.625rem;
 }

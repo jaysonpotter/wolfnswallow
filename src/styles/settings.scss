@@ -8,5 +8,19 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+$custom-font-body: 'Assistant', sans-serif;
+$custom-font-heading: 'Open Sans', sans-serif;
+
+@use 'vuetify/settings' with (
+  $body-font-family: $custom-font-body,
+  $heading-font-family: $custom-font-heading
+);
 
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Elite&display=swap');
+
+.v-card .v-card-title {
+    font-family: "Special Elite", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
