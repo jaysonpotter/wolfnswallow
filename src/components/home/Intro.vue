@@ -3,8 +3,30 @@
         <v-row>
             <v-col
                 cols="12"
+                sm="6"
+            >
+                <v-parallax
+                    src="@/assets/photos/welcome.jpg"
+                    :scale="$vuetify.display.mdAndAbove ? 1 : 0.7"
+                >
+                    <div class="d-flex flex-column fill-height justify-center align-center text-white">
+                        <h1>
+                            Wolf n Swallow
+                        </h1>
+                        <h4>
+                            Opening Soon!
+                        </h4>
+                    </div>
+                </v-parallax>
+            </v-col>
+            <v-col
+                cols="12"
+                sm="6"
             >
                 <v-card>
+                    <template #title>
+                        Welcome
+                    </template>
                     <template #text>
                         <p>
                             Wolf 'n' Swallow offers a whimsical and exclusive culinary adventure for those seeking something
@@ -20,26 +42,22 @@
                             charcuterie, all from a seasonally inspired menu that changes weekly.
                         </p>
                     </template>
-                    <v-btn class="button-53">
-                        Testing
-                    </v-btn>
-                    <!-- HTML !-->
-                    <button
-                        class="mt-8 button-53"
-                        role="button"
-                    >
-                        Button 53
-                    </button>
-
-                    <v-btn class="button-4">
-                        Testing
-                    </v-btn>
-                    <button
-                        class="mt-8 button-4"
-                        role="button"
-                    >
-                        Button 53
-                    </button>
+                </v-card>
+            </v-col>
+            <v-col>
+                <v-card
+                    class="ma-4"
+                    color="secondary"
+                    dark
+                    height="150"
+                    width="300"
+                    clickable
+                    to="/food-menu"
+                >
+                    <v-card-title>Click Me</v-card-title>
+                    <v-card-text>
+                        This is a clickable card acting as a large block button.
+                    </v-card-text>
                 </v-card>
             </v-col>
         </v-row>
@@ -55,87 +73,10 @@ export default {
 
 <style scoped lang="scss">
 p {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin-bottom: 1rem;
-}
-
-/* CSS */
-.button-53 {
-    background-color: #3DD1E7;
-    border: 0 solid #E5E7EB;
-    box-sizing: border-box;
-    color: #000000;
-    display: flex;
-    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 700;
-    justify-content: center;
-    line-height: 1.75rem;
-    padding: .75rem 1.65rem;
-    position: relative;
-    text-align: center;
-    text-decoration: none #000000 solid;
-    text-decoration-thickness: auto;
-    width: 100%;
-    max-width: 460px;
-    cursor: pointer;
-    transform: rotate(-2deg);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-53:focus {
-    outline: 0;
-}
-
-.button-53:after {
-    content: '';
-    position: absolute;
-    border: 1px solid #000000;
-    bottom: 4px;
-    left: 4px;
-    width: calc(100% - 1px);
-    height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-    bottom: 2px;
-    left: 2px;
-}
-
-
-.button-4 {
-    background-image: repeating-linear-gradient(45deg, #b3b2ff 12px 36px, #c08aff 36px 60px, #ffd6fa 60px 84px, #ff97c5 84px 108px, #ffecec 108px 132px);
-    color: #010138;
-    background-size: 300% 150%;
-}
-
-.button-4:hover {
-    background-position: 20% center;
-}
-
-.button-4:active:after {
-    width: 0;
-}
-.button-4:after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 14px);
-    height: calc(100% - 14px);
-    transform-origin: center;
-    background: #fffef7;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    border-radius: 7px;
-}
-
-
-@media (min-width: 768px) {
-    .button-53 {
-        padding: .75rem 3rem;
-        font-size: 1.25rem;
-    }
 }
 </style>
