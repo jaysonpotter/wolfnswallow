@@ -44,17 +44,6 @@
                 <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>
         </v-list>
-        <template #append>
-            <v-divider />
-            <v-list-item
-                to="/food-menu"
-                prepend-icon="mdi-card-account-mail"
-                exact
-                class="wns-nav-contact-us"
-            >
-                <v-list-item-title>Contact Us</v-list-item-title>
-            </v-list-item>
-        </template>
     </v-navigation-drawer>
 </template>
 
@@ -67,7 +56,7 @@ export default {
             navItems: [
                 { title: 'Homepage', icon: 'mdi-home', to: '/' },
                 { title: 'Food Menu', icon: 'mdi-food-apple', to: '/food-menu' },
-                { title: 'Wine Menu', icon: 'mdi-glass-wine', to: '/wine-menu' },
+                { title: 'Drink Menu', icon: 'mdi-glass-wine', to: '/drink-menu' },
                 { title: 'Flight Club', icon: 'mdi-cards-club', to: '/flight-club' },
             ],
         };
@@ -80,7 +69,7 @@ export default {
     background-color: #1a1a1a;
 }
 .wns-nav-drawer {
-    background-image: linear-gradient(#7dc4c2, #badedd);
+    background-color: #fedada;
     border: none;
 }
 .wns-nav-contact-us {

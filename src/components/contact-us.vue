@@ -12,9 +12,9 @@
                 Albuquerque, NM 87102</a>
         </v-list-item>
         <v-list-item
-            prepend-icon="mdi-phone-classic"
+            prepend-icon="mdi-email"
         >
-            <a href="tel:+1-517-667-8355">(517) 667-8355</a>
+            <a :href="'mailto:' + emailAddress">{{ emailAddress }}</a>
         </v-list-item>
     </v-card>
 </template>
@@ -32,6 +32,9 @@ export default {
             } else {
                 return `https://www.google.com/maps?q=${encodedAddress}`;
             }
+        },
+        emailAddress() {
+            return 'wolfnswallow' + '@' + 'gmail.com';
         }
     }
 };

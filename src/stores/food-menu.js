@@ -25,6 +25,9 @@ export const useFoodMenuStore = defineStore('foodMenu', {
         },
         getLilBuddies () {
             return this.menu.find(item => item.category === 'Lil Buddies');
+        },
+        getCaviar () {
+            return this.menu.find(item => item.category === 'Caviar');
         }
     },
     actions: {}

@@ -1,9 +1,3 @@
-/**
- * router/index.ts
- *
- * Automatic routes for `./src/pages/*.vue`
- */
-
 // Composables
 import { createRouter, createWebHistory } from 'vue-router';
 
@@ -26,6 +20,16 @@ const router = createRouter({
                     name     : 'foodMenu',
                     path     : '/food-menu',
                     component: () => import('../pages/food-menu.vue')
+                },
+                {
+                    name     : 'drinkMenu',
+                    path     : '/drink-menu',
+                    component: () => import('../pages/drink-menu.vue')
+                },
+                {
+                    name     : 'flightClub',
+                    path     : '/flight-club',
+                    component: () => import('../pages/flight-club.vue')
                 },
             ]
         },

@@ -189,7 +189,7 @@
       },
       {
         "name": "House chocolate bark",
-        "description": "Packed wit weird stuff + olive oil + salt",
+        "description": "Packed with weird stuff + olive oil + salt",
         "price": 5.00
       },
       {
@@ -212,6 +212,23 @@
       {
         "name": "Pup ‘sicle",
         "description": "Low sodium chicken bone broth",
+        "price": 5.00
+      }
+    ]
+  },
+  {
+    "category": "Caviar",
+    "description": "meow meow meow",
+    "exceptions": "",
+    "items": [
+      {
+        "name": "fishy fish",
+        "description": "made from fish",
+        "price": 5.00
+      },
+      {
+        "name": "nom nom",
+        "description": "tum tum",
         "price": 5.00
       }
     ]

@@ -8,7 +8,7 @@
                 Wolf n Swallow
             </h1>
             <h4>
-                Opening Soon!
+                opening early 2025
             </h4>
         </div>
     </v-parallax>
@@ -16,28 +16,45 @@
         <v-row>
             <v-col
                 cols="12"
-            />
-            <v-col
-                cols="12"
             >
                 <v-card>
-                    <template #title>
-                        Welcome
-                    </template>
                     <template #text>
-                        <p>
-                            Wolf 'n' Swallow offers a whimsical and exclusive culinary adventure for those seeking something
-                            extraordinary. Our charcuterie and provisions are crafted in-house, blending classic comfort
-                            with multicultural twists, while our wine selection features a thoughtfully curated mix of
-                            natural and small-production wines. Chef Houla’s expertise shines through in his dry curing,
-                            fermenting, pickling, and scratch baking, delivering flavors and techniques you won’t find
-                            elsewhere. We proudly partner with local farms and businesses to bring you the freshest
-                            ingredients.
-                        </p>
-                        <p>
-                            Join us to savor fine wines, handcrafted cocktails, small plates, caviar service, and artisanal
-                            charcuterie, all from a seasonally inspired menu that changes weekly.
-                        </p>
+                        <v-row>
+                            <v-col
+                                cols="12"
+                                md="6"
+                            >
+                                <p class="service">
+                                    Wine
+                                </p>
+                                <p class="service">
+                                    Beer
+                                </p>
+                                <p class="service">
+                                    Amaro
+                                </p>
+                                <p class="service">
+                                    Cocktails
+                                </p>
+                            </v-col>
+                            <v-col
+                                cols="12"
+                                md="6"
+                            >
+                                <p class="service">
+                                    Small Plates
+                                </p>
+                                <p class="service">
+                                    Charcuterie
+                                </p>
+                                <p class="service">
+                                    Caviar
+                                </p>
+                                <p class="service">
+                                    Conserva
+                                </p>
+                            </v-col>
+                        </v-row>
                     </template>
                 </v-card>
             </v-col>
@@ -58,7 +75,7 @@
                     <v-card-title>Food Menu</v-card-title>
                     <v-card-subtitle>seasonal and daily delights</v-card-subtitle>
                     <v-card-text>
-                        Hungy? Check out what's on the slab.
+                        hungy? check out an example of what's on the slab.
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -68,16 +85,17 @@
             >
                 <v-card
                     clickable
-                    to="/wine-menu"
-                    class="wine-menu-button"
+                    to="/drink-menu"
+                    class="drink-menu-button"
                 >
                     <v-img
                         src="@/assets/photos/wine-menu-button.jpg"
                     />
-                    <v-card-title>Wine Menu</v-card-title>
-                    <v-card-subtitle>wines with distinction</v-card-subtitle>
+                    <v-card-title>Drink Menu</v-card-title>
+                    <v-card-subtitle>refreshments with distinction</v-card-subtitle>
                     <v-card-text>
-                        We know you're thirsty.
+                        we know you're thirsty.
+                        <span class="coming-soon">Coming Soon</span>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -96,7 +114,8 @@
                     <v-card-title>Flight Club</v-card-title>
                     <v-card-subtitle>continue as long as necessary</v-card-subtitle>
                     <v-card-text>
-                        First rule is we talk about Flight Club.
+                        first rule is we talk about Flight Club.
+                        <span class="coming-soon">Coming Soon</span>
                     </v-card-text>
                 </v-card>
             </v-col>
@@ -120,7 +139,16 @@ p {
     margin-bottom: 1rem;
 }
 
-.food-menu-button {
-
+.service {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.coming-soon {
+    color: #ff6666;
+    display: block;
 }
 </style>

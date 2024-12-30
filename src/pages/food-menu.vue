@@ -5,11 +5,8 @@
     >
         <div class="d-flex flex-column fill-height justify-center align-center text-white">
             <h1>
-                Food Menu
+                Example Food Menu
             </h1>
-            <h4>
-                Small Plates
-            </h4>
         </div>
     </v-parallax>
     <v-container
@@ -58,6 +55,13 @@
             >
                 <menu-category :menu-category-data="getLilBuddies" />
             </v-col>
+            <v-col
+                cols="12"
+                sm="6"
+                md="4"
+            >
+                <menu-category :menu-category-data="getCaviar" />
+            </v-col>
         </v-row>
 
 
@@ -104,7 +108,8 @@ export default {
             'getVeganConserva',
             'getFinale',
             'getLilBuddies',
-            'getLilBuddies'
+            'getLilBuddies',
+            'getCaviar'
         ])
     },
 };

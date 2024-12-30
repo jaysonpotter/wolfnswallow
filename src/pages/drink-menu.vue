@@ -5,7 +5,7 @@
     >
         <div class="d-flex flex-column fill-height justify-center align-center text-white">
             <h1>
-                Flight Club
+                Example Drink Menu
             </h1>
         </div>
     </v-parallax>
@@ -26,9 +26,11 @@
 
 <script>
 export default {
-    name      : 'FLightClub',
-    components: {},
-    computed  : {},
+    name      : 'DrinkMenu',
+    components: {
+    },
+    computed: {
+    },
 };
 </script>
 
